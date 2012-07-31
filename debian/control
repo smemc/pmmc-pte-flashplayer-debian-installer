@@ -1,0 +1,38 @@
+Source: pmmc-pte-flashplayer
+Section: contrib/x11
+Priority: extra
+Maintainer: Laércio de Sousa <lbsousajr@gmail.com>
+XSBC-Original-Maintainer: Bart Martens <bartm@knars.be>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.adobe.com/products/flashplayer.html
+Vcs-Bzr: http://launchpad.net/~oiteam/pmmc-pte-flashplayer/trunk
+Vcs-Browser: http://launchpad.net/~oiteam/pmmc-pte-flashplayer/trunk/files
+
+Package: pmmc-pte-flashplayer
+Architecture: i386
+Multi-Arch: foreign
+Section: contrib/oldlibs
+Depends: ${misc:Depends}, pmmc-pte-flashplayer-installer (= ${binary:Version})
+Description: Transitional package to pmmc-pte-flashplayer-installer
+ This is just a dummy transitional package to new pmmc-pte-flashplayer-installer.
+ It can be safely removed after pmmc-pte-flashplayer-installer is installed.
+
+Package: pmmc-pte-flashplayer-installer
+Architecture: i386
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, wget, libgtk2.0-0, fontconfig, libxt6, libxext6, libatk1.0-0, libcairo2, libexpat1, libfontconfig1, libfreetype6, libglib2.0-0, libice6, libpango1.0-0, libpng12-0, libsm6, libx11-6, libxau6, libxcursor1, libxdmcp6, libxfixes3, libxi6, libxinerama1, libxrandr2, libxrender1, zlib1g, libnss3-1d, libnspr4-0d, libcurl3 | libcurl3-gnutls, libasound2, libffi6, libgdk-pixbuf2.0-0, libnspr4, libnss3, libpcre3, libuuid1, libxcb1
+Suggests: x-ttcidfont-conf, ttf-mscorefonts-installer, ttf-bitstream-vera | ttf-dejavu, ttf-xfree86-nonfree, xfs
+Recommends: libasound2-plugins (>= 1.0.16)
+Conflicts: pmmc-pte-flashplayer (<< ${binary:Version})
+Replaces: pmmc-pte-flashplayer (<< ${binary:Version})
+Provides: pmmc-pte-flashplayer
+Description: Adobe Flash Player Projector installer (for PTE-PMMC purposes)
+ This metapackage downloads and Installs the Adobe Flash Player Projector.
+ The Adobe Flash Player standalone projector supports playing of SWF files
+ with no need of a browser.
+ .
+ WARNING: Installing this Ubuntu package causes the Adobe Flash Player
+ projector to be downloaded from the Adobe web site. The distribution license
+ of the Adobe Flash Player projector is available at www.adobe.com. Installing
+ this Ubuntu package implies that you have accepted the terms of that license.
