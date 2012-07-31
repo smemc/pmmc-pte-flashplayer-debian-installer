@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-31 09:33-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../pmmc-pte-flashplayer-installer.templates:1001
+msgid "Do you accept the license and do you want to download Flash Player now?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../pmmc-pte-flashplayer-installer.templates:1001
+msgid ""
+"Flash Player Projector is to be downloaded from www.adobe.com. This can be "
+"done automatically now. The distribution license of Flash Player is "
+"available at www.adobe.com."
+msgstr ""
