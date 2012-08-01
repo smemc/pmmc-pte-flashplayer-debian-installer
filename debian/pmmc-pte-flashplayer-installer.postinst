@@ -58,7 +58,7 @@ download_and_unpack() {
     flashplayer_unpack ${CACHE_DIR} ${1} || exit_with_error
 }
 
-install() {
+install_bin() {
     DATA_ORIG=${1}/install_flash_player_linux_sa
     DATA_DEST=/opt/pmmc/pte/bin
     flashplayer_install ${DATA_ORIG} ${DATA_DEST}
@@ -67,7 +67,7 @@ install() {
 case "${1}" in
     configure)
         download_and_unpack ${TEMP}
-        install_data ${TEMP} && rm -rf ${TEMP} && echo "Flash Player Projector installed."
+        install_bin ${TEMP} && rm -rf ${TEMP} && echo "Flash Player Projector installed."
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
